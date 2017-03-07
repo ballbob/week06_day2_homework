@@ -36,4 +36,10 @@ public class PhotographerTest{
       assertEquals(0,photographer.camerasCount());
     }
 
+    @Test
+    public void canDisplayDetailsOfOneCamera(){
+      photographer.addCamera(digitalcamera);
+      assertEquals("Digital image.",photographer.allCameraDetails());
+    }
+
 }

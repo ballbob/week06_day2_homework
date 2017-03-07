@@ -25,4 +25,12 @@ public class Photographer {
   public void removeCamera(Camera camera){
     cameras.remove(camera);
   }
+
+  public String allCameraDetails(){
+    for (Camera camera : cameras) {
+      return camera.getDetails();
+    }
+    return "No.";
+  }
+
 }

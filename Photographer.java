@@ -25,5 +25,4 @@ public class Photographer {
   public void removeCamera(Camera camera){
     cameras.remove(camera);
   }
-
 }

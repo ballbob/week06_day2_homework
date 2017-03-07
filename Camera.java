@@ -1,3 +1,3 @@
-public class Camera  {
+public interface Camera  {
 
 }

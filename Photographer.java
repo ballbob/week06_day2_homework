@@ -13,4 +13,13 @@ public class Photographer {
   public String getName(){
     return this.name;
   }
+
+  public int camerasCount(){
+    return cameras.size();
+  }
+
+  public void addCamera(Camera camera){
+    cameras.add(camera);
+  }
+
 }

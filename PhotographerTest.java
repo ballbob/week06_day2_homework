@@ -15,4 +15,15 @@ public class PhotographerTest{
     public void getName(){
     assertEquals("Kevin", photographer.getName());
     }
+
+    @Test
+    public void camerasStartsEmpty(){
+      assertEquals(0,photographer.camerasCount());
+    }
+
+    @Test
+    public void canAddCameras(){
+     photographer.addCamera(camera);
+     assertEquals(1, photographer.camerasCount());
+    }
 }

@@ -39,7 +39,15 @@ public class PhotographerTest{
     @Test
     public void canDisplayDetailsOfOneCamera(){
       photographer.addCamera(digitalcamera);
-      assertEquals("Digital image.",photographer.allCameraDetails());
+      assertEquals("The output is  Digital image.",photographer.allCameraDetails());
+    }
+
+    @Test
+    public void canDisplayDetailsOfMultipleCameras(){
+      photographer.addCamera(digitalcamera);
+      photographer.addCamera(analoguecamera);
+      System.out.println(photographer.allCameraDetails());
+      assertEquals("The output is  Digital image. Chemically-produced image.", photographer.allCameraDetails());
     }
 
 }

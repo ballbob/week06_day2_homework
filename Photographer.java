@@ -27,10 +27,11 @@ public class Photographer {
   }
 
   public String allCameraDetails(){
+    String strings = "The output is ";
     for (Camera camera : cameras) {
-      return camera.getDetails();
+      strings = strings + " " + camera.getDetails();
     }
-    return "No.";
+      return strings;
   }
 
 }
